@@ -19,8 +19,7 @@ class UpdatableTests: XCTestCase {
         XCTAssertEqual(destination.test, 42)
         
         let mapping = BaseMapping(sourcePath: \String.count, destinationPath: \DestinationTest.test)
-        
-        let _: Int? = destination.modify(with: mapping, from: "Test")
+        destination.modify(with: mapping, from: "Test", type: Int.self)
         XCTAssertEqual(destination.test, "Test".count)
     }
 }

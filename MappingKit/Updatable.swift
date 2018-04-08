@@ -9,21 +9,24 @@
 import Foundation
 
 protocol Updatable {
-    mutating func modify<Source, Type>(with mapping: BaseMapping<Source, Self>, from source: Source) -> Type?
+    mutating func modify<Source, Type>(with mapping: BaseMapping<Source, Self>, from source: Source, type: Type.Type)
+//    mutating func modify<Source, Type>(with mapping: BaseMapper<Source, Self>, from source: Source, type: Type.Type)
 }
 
 extension Updatable {
-    mutating func modify<Source, Type>(with mapping: BaseMapping<Source, Self>, from source: Source) -> Type? {
-        guard let destPath = mapping.destinationPath as? WritableKeyPath<Self, Type> else {
-            return nil
-        }
-        guard let sourcePath = mapping.sourcePath as? KeyPath<Source, Type> else {
-            return nil
-        }
+    mutating func modify<Source, Type>(with mapping: BaseMapping<Source, Self>, from source: Source, type: Type.Type) {
+        let destPath = mapping.destinationPath as! WritableKeyPath<Self, Type> // enforce as! instead of guard because can't fail
+        let sourcePath = mapping.sourcePath as! KeyPath<Source, Type> // enforce as! instead of guard because can't fail
+        
         let val: Type = source[keyPath: sourcePath]
         self[keyPath: destPath] = val
-        return self[keyPath: destPath]
     }
+    
+//    mutating func modify<Source>(with mapping: BaseMapper<Source, Self>, from source: Source) {
+//        for map in mapping.table {
+//            self.modify(with: map, from: source, type: map.type)
+//        }
+//    }
 }
 
 

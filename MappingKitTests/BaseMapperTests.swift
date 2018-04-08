@@ -31,5 +31,4 @@ class BaseMapperTests: XCTestCase {
         XCTAssertEqual(destination.test, source.count)
         XCTAssertEqual(destination.test2, source.capitalized)
     }
-    
 }
