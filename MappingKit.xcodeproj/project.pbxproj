@@ -8,8 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		18909CA3207A562E004E6C26 /* MappingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18909C99207A562E004E6C26 /* MappingKit.framework */; };
-		18909CA8207A562E004E6C26 /* MappingKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18909CA7207A562E004E6C26 /* MappingKitTests.swift */; };
 		18909CAA207A562E004E6C26 /* MappingKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 18909C9C207A562E004E6C26 /* MappingKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18909CB4207A564C004E6C26 /* BaseMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18909CB3207A564C004E6C26 /* BaseMapping.swift */; };
+		18909CB6207A56EC004E6C26 /* FullMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18909CB5207A56EC004E6C26 /* FullMapping.swift */; };
+		18909CB8207A575A004E6C26 /* BaseMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18909CB7207A575A004E6C26 /* BaseMappingTests.swift */; };
+		18909CBA207A589C004E6C26 /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18909CB9207A589C004E6C26 /* Updatable.swift */; };
+		18909CBC207A5941004E6C26 /* UpdatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18909CBB207A5941004E6C26 /* UpdatableTests.swift */; };
+		18909CBE207A5A3F004E6C26 /* BaseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18909CBD207A5A3F004E6C26 /* BaseMapper.swift */; };
+		18909CC0207A5ACA004E6C26 /* BaseMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18909CBF207A5ACA004E6C26 /* BaseMapperTests.swift */; };
+		18909CC2207A5BEE004E6C26 /* MappingInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18909CC1207A5BEE004E6C26 /* MappingInitializable.swift */; };
+		18909CC4207A5C6C004E6C26 /* MappingInitializableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18909CC3207A5C6C004E6C26 /* MappingInitializableTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +35,16 @@
 		18909C9C207A562E004E6C26 /* MappingKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MappingKit.h; sourceTree = "<group>"; };
 		18909C9D207A562E004E6C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18909CA2207A562E004E6C26 /* MappingKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MappingKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		18909CA7207A562E004E6C26 /* MappingKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingKitTests.swift; sourceTree = "<group>"; };
 		18909CA9207A562E004E6C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18909CB3207A564C004E6C26 /* BaseMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMapping.swift; sourceTree = "<group>"; };
+		18909CB5207A56EC004E6C26 /* FullMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullMapping.swift; sourceTree = "<group>"; };
+		18909CB7207A575A004E6C26 /* BaseMappingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMappingTests.swift; sourceTree = "<group>"; };
+		18909CB9207A589C004E6C26 /* Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updatable.swift; sourceTree = "<group>"; };
+		18909CBB207A5941004E6C26 /* UpdatableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatableTests.swift; sourceTree = "<group>"; };
+		18909CBD207A5A3F004E6C26 /* BaseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMapper.swift; sourceTree = "<group>"; };
+		18909CBF207A5ACA004E6C26 /* BaseMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMapperTests.swift; sourceTree = "<group>"; };
+		18909CC1207A5BEE004E6C26 /* MappingInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingInitializable.swift; sourceTree = "<group>"; };
+		18909CC3207A5C6C004E6C26 /* MappingInitializableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingInitializableTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +89,11 @@
 			children = (
 				18909C9C207A562E004E6C26 /* MappingKit.h */,
 				18909C9D207A562E004E6C26 /* Info.plist */,
+				18909CB3207A564C004E6C26 /* BaseMapping.swift */,
+				18909CB5207A56EC004E6C26 /* FullMapping.swift */,
+				18909CB9207A589C004E6C26 /* Updatable.swift */,
+				18909CBD207A5A3F004E6C26 /* BaseMapper.swift */,
+				18909CC1207A5BEE004E6C26 /* MappingInitializable.swift */,
 			);
 			path = MappingKit;
 			sourceTree = "<group>";
@@ -80,7 +101,10 @@
 		18909CA6207A562E004E6C26 /* MappingKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				18909CA7207A562E004E6C26 /* MappingKitTests.swift */,
+				18909CB7207A575A004E6C26 /* BaseMappingTests.swift */,
+				18909CBB207A5941004E6C26 /* UpdatableTests.swift */,
+				18909CBF207A5ACA004E6C26 /* BaseMapperTests.swift */,
+				18909CC3207A5C6C004E6C26 /* MappingInitializableTests.swift */,
 				18909CA9207A562E004E6C26 /* Info.plist */,
 			);
 			path = MappingKitTests;
@@ -148,6 +172,7 @@
 				TargetAttributes = {
 					18909C98207A562E004E6C26 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					18909CA1207A562E004E6C26 = {
@@ -196,6 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18909CBE207A5A3F004E6C26 /* BaseMapper.swift in Sources */,
+				18909CBA207A589C004E6C26 /* Updatable.swift in Sources */,
+				18909CC2207A5BEE004E6C26 /* MappingInitializable.swift in Sources */,
+				18909CB4207A564C004E6C26 /* BaseMapping.swift in Sources */,
+				18909CB6207A56EC004E6C26 /* FullMapping.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +233,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18909CA8207A562E004E6C26 /* MappingKitTests.swift in Sources */,
+				18909CB8207A575A004E6C26 /* BaseMappingTests.swift in Sources */,
+				18909CC0207A5ACA004E6C26 /* BaseMapperTests.swift in Sources */,
+				18909CC4207A5C6C004E6C26 /* MappingInitializableTests.swift in Sources */,
+				18909CBC207A5941004E6C26 /* UpdatableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +367,7 @@
 		18909CAE207A562E004E6C26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +381,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = clement.nonn.MappingKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +390,7 @@
 		18909CAF207A562E004E6C26 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +412,7 @@
 		18909CB1207A562E004E6C26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V645YUN93L;
 				INFOPLIST_FILE = MappingKitTests/Info.plist;
@@ -390,6 +427,7 @@
 		18909CB2207A562E004E6C26 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V645YUN93L;
 				INFOPLIST_FILE = MappingKitTests/Info.plist;
